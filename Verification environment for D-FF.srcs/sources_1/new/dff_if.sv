@@ -1,0 +1,16 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Interface Name: add_if
+//////////////////////////////////////////////////////////////////////////////////
+
+interface dff_if;
+    logic clk;
+    logic rst;
+    logic din;
+    logic dout;
+    
+    modport DUT (
+        input clk,rst,din,
+        output dout 
+     );
+ endinterface
